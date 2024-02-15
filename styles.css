@@ -1,0 +1,137 @@
+@font-face {
+    font-family: WorkSans;
+    src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: SemiBold;
+    src: url('./assets/fonts/static/WorkSans-SemiBold.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: WorkSans;
+    color: hsl(292, 42%, 14%);
+}
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.container {
+    position: absolute;
+    top: 175px;
+    width: 500px;
+    padding: 40px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 50px .1px rgba(0, 0, 0, 0.2);
+}
+/* .container * {
+    transition: all .5s;
+} */
+#faqs {
+    display: flex;
+    align-items: center;
+}
+#faqs > div {
+    font-size: 50px;
+    font-weight: bold;
+    transition: all .5s;
+}
+#faqs > img {
+    padding-right: 20px;
+    height: 40px;
+}
+.question {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+.question div{
+    flex-grow: 1;
+    font-size: 16px;;
+    font-family: SemiBold;
+    transition: color .2s;
+}
+.question:hover {
+    cursor: pointer;
+}
+.question:hover > div{
+    color: purple;
+}
+img {
+    display: block;
+    transition: all .5s;
+}
+.hide-icon {
+    height: 0;
+    width: 0;
+}
+.hide-answer {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0fr;
+}
+.spin-icon {
+    transform: rotate(180deg);
+}
+.p {
+    transition: all .5s;
+}
+.pp {
+    color: hsl(292, 16%, 49%);
+    font-size: 16px;
+    overflow: hidden;
+    grid-row: 1 / span 2;
+}
+.show-answer {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr;
+    padding-top: 20px;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: relative;
+    top: 330px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 300px;
+    }
+    #faqs > div {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    #faqs > img {
+        height: 30px;
+    }
+    .attribution {
+        top: 400px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .container {
+        max-width: 250px;
+    }
+    #faqs > div {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #faqs > img {
+        height: 20px;
+    }
+}

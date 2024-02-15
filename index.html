@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        <title>Frontend Mentor | FAQ accordion</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <div id="faqs">
+                    <img src="./assets/images/icon-star.svg" alt="star icon">
+                    <div>FAQs</div>
+                </div>
+            
+                <section id="accordion-1" class="accordion">
+                    <div class="question" onclick="show_hide(this)">
+                        <div id="question-1" onkeydown="keyNav(event, this)" tabindex="1" >What is Frontend Mentor, and how will it help me?</div>
+                        <img id="plus-icon" src="./assets/images/icon-plus.svg" alt="plus icon">
+                        <img id="minus-icon" src="./assets/images/icon-minus.svg" class="hide-icon" alt="minus icon">
+                    </div>
+                    <div class="p hide-answer">
+                        <div class="pp">
+                            Frontend Mentor offers realistic coding challenges to help developers improve their 
+                            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+                            all levels and ideal for portfolio building.
+                        </div>
+                    </div>
+                </section>
+                <section id="accordion-2" class="accordion">
+                    <div class="question" onclick="show_hide(this)">
+                        <div id="question-2" onkeydown="keyNav(event, this)" tabindex="2" >Is Frontend Mentor free?</div>
+                        <img id="plus-icon" src="./assets/images/icon-plus.svg" alt="plus icon">
+                        <img id="minus-icon" src="./assets/images/icon-minus.svg" class="hide-icon" alt="minus icon">
+                    </div>
+                    <div class="p hide-answer">
+                        <div class="pp">
+                            Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+                            option providing access to a range of projects suitable for all skill levels.
+                        </div>
+                    </div>
+                </section>
+                <section id="accordion-3" class="accordion">
+                    <div class="question" onclick="show_hide(this)">
+                        <div id="question-3" onkeydown="keyNav(event, this)" tabindex="3" >Can I use Frontend Mentor projects in my portfolio?</div>
+                        <img id="plus-icon" src="./assets/images/icon-plus.svg" alt="plus icon">
+                        <img id="minus-icon" src="./assets/images/icon-minus.svg" class="hide-icon" alt="minus icon">
+                    </div>
+                    <div class="p hide-answer">
+                        <div class="pp">
+                            Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+                            way to showcase your skills to potential employers!
+                        </div>
+                    </div>
+                </section>
+                <section id="accordion-4" class="accordion">
+                    <div class="question" onclick="show_hide(this)">
+                        <div id="question-4" onkeydown="keyNav(event, this)" tabindex="4" >How can I get help if I'm stuck on a Frontend Mentor challenge?</div>
+                        <img id="plus-icon" src="./assets/images/icon-plus.svg" alt="plus icon">
+                        <img id="minus-icon" src="./assets/images/icon-minus.svg" class="hide-icon" alt="minus icon">
+                    </div>
+                    <div class="p hide-answer">
+                        <div class="pp">
+                            The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+                        channel where you can ask questions and seek support from other community members.
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://www.frontendmentor.io/profile/mon-68kg">mon</a>.
+            </div>
+        </main>
+
+
+
+
+
+        <script src="./accordion.js"></script>
+    </body>
+</html>
